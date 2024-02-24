@@ -1,0 +1,31 @@
+.Menulist{
+    color: white;
+    width: inherit;
+    height: 19rem;
+    background-color: black;
+    position: relative;
+    top: 1rem;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    /* transition-delay: 2s; */
+    /* animation-name: test; */
+    /* animation-duration: 1s; */
+    /* transition-timing-function: linear; */
+}
+.categorylist{
+    list-style-type: none;
+    padding: 0;
+}
+.menulinkitem{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+.menulistitem:hover{
+    background-color: #00e9bf;
+}
+.menulistitem{
+    width: 100%;
+    text-align: center;
+}

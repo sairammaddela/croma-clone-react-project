@@ -1,0 +1,29 @@
+.profilelist{
+    width: 20rem;
+    position: absolute;
+    right: 10rem;
+    /* z-index: 10000; */
+    /* margin-left: -5rem; */
+    transition: height 1s ease-in-out;
+    background: black;
+}
+.profileopacity{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 5rem;
+    position: fixed;
+    background: grey;
+    right: 0rem;
+    /* opacity: 0.7; */
+    background-color: rgba(255,255,255,0.7);
+}
+.log{
+    width: 8rem;
+    height: 2rem;
+    background: #12daa8;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+}

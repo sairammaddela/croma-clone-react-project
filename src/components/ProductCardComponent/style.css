@@ -1,0 +1,28 @@
+.selectfilter{
+    width: 11rem;
+    background: #393939;
+    color: white;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 0.3rem;
+    position: relative;
+    font-size: 1rem;
+}
+.ulfilter{
+    background: black;
+    list-style-type: none;
+    border-radius: 1rem;
+    height: 19rem;
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    z-index: 1;
+    width: inherit;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+}
+.selectulfilter
+{
+    width: 100%;
+}

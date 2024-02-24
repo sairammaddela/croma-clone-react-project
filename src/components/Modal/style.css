@@ -1,0 +1,47 @@
+.Modalclass{
+    width: 50%;
+    height: 40vh;
+    background-color: black;
+    position: relative;
+    top: 10rem;
+    margin: auto;
+    padding: 1rem;
+}
+.modaladded{
+    display: inline;
+}
+.modalcross{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+}
+.tickmarkmodal{
+    width: 2rem;
+    position: relative;
+    top: 0.5rem;
+}
+.mainmodal{
+    display: flex;
+    justify-content: space-between;
+}
+.modaldisplayimg{
+    width: 5rem;
+}
+.modalproductname{
+    width: 35rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.modalproductprice{
+    width: 5rem;
+    font-size: 1.2rem;
+}
+.proceedcartbtn{
+    width: 12rem;
+    color: black;
+    font-weight: 800;
+    background-color: #12DAA8;
+    height: 3rem;
+    border-radius: 1rem;
+}

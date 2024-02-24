@@ -1,0 +1,46 @@
+.Searchcomp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+#spancount{
+    font-size: medium;
+    color: grey;
+}
+.searchcard{
+    width: 30rem;
+    height:30rem;
+    position: relative;
+    border-bottom: 0.2rem solid gray;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.searchimage{
+    width: 20rem;
+    height:20rem;
+    background: #393939;
+    border-radius: 5%;
+}
+.searchitems{
+    width: 100%;
+    min-height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ratingvalue{
+    color: #12daa8;
+}
+.elementname{
+    
+    font-weight: 800;
+    font-size: 1rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    width: 22rem;
+    margin-left: 4rem;
+}

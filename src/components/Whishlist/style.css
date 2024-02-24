@@ -1,0 +1,17 @@
+.whishlistcard{
+    width: 80rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+}
+.wishlistbtnsction{
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    gap: 1rem;
+}
+.displaynone{
+    display: none;
+}

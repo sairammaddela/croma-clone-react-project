@@ -1,0 +1,52 @@
+.navbar{
+    width:100%;
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+span{
+    color: white;
+}
+#cromalogo{
+    width: 5rem;
+    margin-left: 12rem;
+}
+#menuicon{
+    margin-left: 5rem;
+}
+#locationicon{
+    width: 1.5rem;
+    margin-left: 9rem;
+}
+#profileicon{
+    margin-left: 1.5rem;
+}
+#carticon{
+    /* margin-left: -13.5rem; */
+}
+.menusection{
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    flex-wrap: wrap;
+    max-height: 1.5rem;
+}
+.cartcountnavbar{
+    width: 0.9rem;
+    height: 0.9rem;
+    background: #12daa8;
+    display: flex;
+    position: relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+

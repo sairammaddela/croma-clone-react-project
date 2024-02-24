@@ -1,0 +1,60 @@
+.dodimg{
+    width: 20rem;
+    height: 13rem;
+}
+.dodsection{
+    display: flex;
+    gap:1rem;
+    width: 68rem;
+    transition: transform 1s ease-out 0s
+}
+.dodcard{
+    text-align: left;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    height: 20rem;
+    width: 20rem;
+    background: black;
+}
+.dealoftheday{
+    height: 25rem;
+}
+.heartclass{
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.dodname{
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: inherit;
+    height: 4.2rem;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 1.8rem;
+    font-family: Switzer;
+}
+#dodfunctionality{
+    display: flex;
+    overflow: hidden
+}
+h2{
+    color: white;
+}
+#dodflex{
+    display: flex;
+}
+.arrow{
+    width: 2rem;
+    z-index: 10;
+    background-color: #191919;
+}
+.starrating{
+    width: 1rem;
+}

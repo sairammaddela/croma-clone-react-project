@@ -1,0 +1,90 @@
+.productdetaildisplaysection{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+}
+.productdetailimgsection{
+    width: 50%;
+    height: inherit;
+    display: flex;
+}
+.producttinyimgsection{
+    width:30%;
+    /* height: inherit; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productsmallimg{
+    width:10rem;
+    height: 10rem;
+}
+.prodctdetailimgsection{
+    position: relative;
+    width: 70%;
+    height: inherit;
+}
+.productdisplayimg{
+    width:28rem;
+    height: 35rem;
+}
+#productdetailspage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.productdetalleftarrow{
+    transform: rotate(90deg);
+    width: 2.5rem;
+}
+.productdetalrightarrow{
+    transform: rotate(90deg);
+    width: 2.5rem;
+}
+.multipleminiimages{
+    width: 100%;
+    height: 40rem;
+    transition: transform 1s ease-out 0s;
+    display: flex;
+    flex-direction: column;
+    
+}
+.controloverflow{
+    overflow: hidden;
+    height: 30rem;
+}
+.displaydetails{
+    color: white;
+    text-align: left;
+    width: 50%;
+    font-size: medium;
+}
+.productdetailsbtn{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 6%;
+}
+
+.productdetailsbtn:hover{
+    background-color: #12daa8;
+    color: black;
+    font-weight: 900;
+    border: 1px solid #12daa8;
+    cursor: pointer;
+}
+.productdetailoverview{
+    width: 95%;
+    border: 1px solid gray;
+    background-color: transparent;
+    height: 20rem;
+    overflow-y: scroll;
+    color: white;
+}
+.productdetailoverview::-webkit-scrollbar{
+    width: 0rem;
+}
