@@ -22,7 +22,14 @@ const Myorders=()=>{
                 <div className="cartproducts">
                     {
                         getitems?.map(val=>{
+                            if(val.order.items[0])
+                            {
                             return <Ordercard product={val.order.items[0]}/>
+                            }
+                            else
+                            {
+                                return;
+                            }
                         })
                     }
                 </div>
