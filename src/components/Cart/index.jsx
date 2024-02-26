@@ -15,7 +15,11 @@ const Cartpage=()=>{
             setitems(data1?.data);
         })
     })
-    },[])
+    },[]);
+    function checkoutHandler(e)
+    {
+        navigate("/shipping");
+    }
     return(
         <div className="cartsection">
             <Navbar/>
@@ -31,7 +35,7 @@ const Cartpage=()=>{
                     <h3>Order Summary (<span style={{color:"black"}} id="testcount">{getitems?.items.length}</span>) items</h3>
                     <div style={{display:"flex",justifyContent:"space-between"}}><p className="pcolor">Original price</p><p className="pcolor" id="testprice">{getitems?.totalPrice}</p></div>
                     <div style={{display:"flex",justifyContent:"space-between"}}><p className="pcolor">Total</p><p className="pcolor" id="testtotal">{getitems?.totalPrice}</p></div>
-                    <button className="cartcheckoutbtn">Checkout</button>
+                    <button className="cartcheckoutbtn" onClick={checkoutHandler}>Checkout</button>
                     </div>
                     
                 </div>

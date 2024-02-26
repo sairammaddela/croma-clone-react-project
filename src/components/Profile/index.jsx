@@ -86,7 +86,7 @@ const Profile=(props)=>{
                     <img src={profileicon} alt="icon" style={{width: "3rem",position: "relative",top: "1.5rem","margin-right": "1rem"}}/>
                 </div>
                 <div>
-                <h3 style={{"textAlign":"left"}}>{getuser?`Hello ${getuser[2]?.name}`:"My profile"}</h3>
+                <h3 style={{"textAlign":"left"}}>{localStorage.getItem("token")&&getuser?`Hello ${getuser[2]?.name}`:"My profile"}</h3>
                 {/* <h3 style={{"textAlign":"left"}}>My Profile</h3>
                 <p style={{"fontSize":"smaller"}}> Edit your basic details</p> */}
                 </div>

@@ -70,27 +70,27 @@ const Mypayment=()=>{
                     <form>
                         <h4>Enter Debit / Credit Card DetailsCard number</h4>
                         <div>
-                        <input type="text" required style={{border: "none", "border-bottom": "2px solid rgb(226, 226, 226)","margin-bottom": "1rem"}} placeholder="Enter card number here"/>
+                        <input type="text" className="paymentinput" required style={{border: "none", "border-bottom": "2px solid rgb(226, 226, 226)","margin-bottom": "1rem"}} placeholder="Enter card number here"/>
                         <img style={{width:"2.5rem"}} src="https://assets.juspay.in/hyper/images/common/jp_default_card.png" alt="paymenticon"/>
                         </div>
                         <div style={{"margin-top": "2rem"}}>
-                            <label>Expiry <input required style={{width: "4.8rem", border: "none","border-bottom": "2px solid rgb(226, 226, 226)"}} type="text" placeholder="MM/YYYY"/></label>
-                            <label style={{"margin-left":"1.7rem"}}>CVV <input required style={{border: "none", width: "3rem", "border-bottom": "2px solid rgb(226, 226, 226)"}} type="text" placeholder="CVV"/></label>
+                            <label>Expiry <input required className="paymentinput" style={{width: "4.8rem", border: "none","border-bottom": "2px solid rgb(226, 226, 226)"}} type="text" placeholder="MM/YYYY"/></label>
+                            <label style={{"margin-left":"1.7rem"}}>CVV <input required className="paymentinput" style={{border: "none", width: "3rem", "border-bottom": "2px solid rgb(226, 226, 226)"}} type="text" placeholder="CVV"/></label>
                         </div>
-                        <button type="Submit" onClick={submitHandler} style={{width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
+                        <button type="Submit" className="paymentbtn" onClick={submitHandler} style={{width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
                     </form>
                     </div>
                     <div className={getactive?.upi==="activeclass"?"":"displaynone"}>
                         <form>
                             <h3>UPI ID / VPA</h3>
-                            <input type="text" required placeholder="e.g sairam@upi" style={{"margin-top":"2rem",border: "none", width: "8rem", "border-bottom": "2px solid rgb(226, 226, 226)"}}/>
+                            <input type="text" required className="paymentinput" placeholder="e.g sairam@upi" style={{"margin-top":"2rem",border: "none", width: "8rem", "border-bottom": "2px solid rgb(226, 226, 226)"}}/>
                             <p style={{color:"#737373"}}>A collect request will be sent to this UPI ID</p>
-                            <button type="Submit" style={{"margin-top":"3rem",width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
+                            <button type="Submit" className="paymentbtn" style={{"margin-top":"3rem",width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
                         </form>
                     </div>
                     <div className={getactive?.cod==="activeclass"?"":"displaynone"}>
                         <h4 style={{color:"black"}}>Cash on Delivery charges are free</h4>
-                        <button type="Submit" style={{"margin-top":"3rem",width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
+                        <button type="Submit" className="paymentbtn" style={{"margin-top":"3rem",width: "10rem",height: "2.5rem", "margin-top": "2rem", background: "rgb(18, 218, 168)", border: "none", "border-radius": "1rem", cursor: "pointer"}}>Place order & Pay</button>
                     </div>
                 </div>
                 <div style={{width:"35rem",marginLeft:"1rem"}}>

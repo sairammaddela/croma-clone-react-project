@@ -26,3 +26,26 @@
 {
     width: 100%;
 }
+@media screen and (width<450px)
+{
+    .searchcard{
+        width:90%;
+        text-align: left;
+        height: 220px;
+    }
+    .searchimage{
+        width:100%;
+        height: 150px;
+    }
+    .elementname{
+        font-size: xx-small;
+        width: 100%;
+        margin: 0;
+    }
+    .starrating{
+        width:2rem;
+    }
+    .ratingvalue{
+        font-size: xx-small;
+    }
+}

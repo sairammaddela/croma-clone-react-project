@@ -40,8 +40,9 @@
   }
   
   .Registerbtn {
-    width: 350px;
+    width: 20rem;
     padding: 15px;
+    font-size: 1rem;
     border-radius: 10px;
     color: black;
     font-weight: 600;

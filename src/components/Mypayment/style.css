@@ -4,3 +4,13 @@
 .activeclass{
     background-color: #DBDBDB;
 }
+.paymentinput{
+    width: 5rem;
+    height: 2rem;
+}
+.paymentinput::placeholder{
+    font-size: 1rem;
+}
+.paymentbtn{
+    font-size: 1rem;
+}

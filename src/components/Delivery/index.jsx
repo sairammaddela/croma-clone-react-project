@@ -3,9 +3,11 @@ import "./style.css"
 import Shippingcards from "./shippingcard";
 import Checkoutnavbar from "../checkoutnavbar/checkoutnavbar";
 import Footer from "../footer";
+import { useNavigate } from "react-router-dom";
 const Delivery=()=>{
     const [getitems,setitems]=useState();
     const [getaddress,setaddress]=useState();
+    const navigate=useNavigate();
     const classname=(localStorage.getItem("city")&&localStorage.getItem("name")&&localStorage.getItem("zipCode")&&localStorage.getItem("street")&&localStorage.getItem("state"))?"displaynone":"";
     useEffect(()=>{
         fetch("https://academics.newtonschool.co/api/v1/ecommerce/cart",{
@@ -45,6 +47,10 @@ const Delivery=()=>{
         let obj;
         obj=e.currentTarget.innerText+"";
         localStorage.setItem("addressType",obj);
+    }
+    function checkoutHandler(e)
+    {
+        navigate("/mypayment");
     }
     return(
         <div className="cartsection">
@@ -93,7 +99,7 @@ const Delivery=()=>{
                     <h3>Order Summary (<span style={{color:"black"}} id="testcount">1</span>) item</h3>
                     <div style={{display:"flex",justifyContent:"space-between"}}><p className="pcolor">Original price</p><p className="pcolor" id="testprice">{getitems?.items[0].product?.price}</p></div>
                     <div style={{display:"flex",justifyContent:"space-between"}}><p className="pcolor">Total</p><p className="pcolor" id="testtotal">{getitems?.items[0].product?.price}</p></div>
-                    <button className="cartcheckoutbtn">Checkout</button>
+                    <button className="cartcheckoutbtn" onClick={checkoutHandler}>Checkout</button>
                     </div>
                     
                 </div>

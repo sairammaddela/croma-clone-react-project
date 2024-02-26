@@ -81,10 +81,7 @@ const Login = () => {
                             required
                         />
                     </div>
-                    <div className="logincheck">
-                        <input type="checkbox" />
-                        <p style={{ fontSize: "0.85rem" }}>Keep me signed in</p>
-                    </div>
+                    
 
                     <p className="terms">By continuing you agree to our terms and policies</p>
                     <button className="Loginbtn" onClick={signedin}>Continue</button>
