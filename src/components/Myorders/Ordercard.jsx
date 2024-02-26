@@ -1,7 +1,7 @@
 
 
 const Ordercard=(product)=>{
-    console.log(product.product.product._id);
+    // console.log(product.product.product._id);
     return(
         <div className="cartmainclass">
         <div className='mainmodal'>
